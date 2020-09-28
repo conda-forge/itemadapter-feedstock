@@ -5,7 +5,7 @@ Home: https://github.com/scrapy/itemadapter
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Common interface for different data containers
 
