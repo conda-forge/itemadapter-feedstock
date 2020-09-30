@@ -1,5 +1,5 @@
 {% set name = "itemadapter" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 52159b4f97d82aa2968000ee8371b2114af56a2f44e4cd9142580d46eea39020
+  sha256: b5e75d48c769ee5c89de12aeba537b2d62d7b575cd549d5d430ed8a67faa63f2
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Common interface for different data containers'
+  summary: Common interface for different data containers
   description: |
     The ItemAdapter class is a wrapper for data container objects, providing a
     common interface to handle objects of different types in an uniform manner,
