@@ -5,7 +5,7 @@ Home: https://github.com/scrapy/itemadapter
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/itemadapter-feedstock/blob/master/LICENSE.txt)
 
 Summary: Common interface for different data containers
 
