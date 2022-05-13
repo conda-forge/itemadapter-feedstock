@@ -1,5 +1,5 @@
 {% set name = "itemadapter" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 05b6a79dd31a7a993dfb2e8386a91c97e3b8c6cf28b72553e808e625e0b87c20
+  sha256: 3f1f60ebd6c91b00222820f38bf5126aa49a8fb6e467d351f0364421f953a15d
 
 build:
   noarch: python
