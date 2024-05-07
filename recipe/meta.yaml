@@ -26,6 +26,10 @@ test:
     - itemadapter
   requires:
     - pip
+    - attrs
+    - pydantic <2
+    - pytest >=5.4
+    - scrapy >=2.0
   commands:
     - pip check
 
