@@ -1,5 +1,5 @@
 {% set name = "itemadapter" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 77758485fb0ac10730d4b131363e37d65cb8db2450bfec7a57c3f3271f4a48a9
+  sha256: e4f958a6b6b6f5831fa207373010031a0bd7ed0429ddd09b51979c011475cafd
 
 build:
   noarch: python
@@ -16,18 +16,27 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.8
     - pip
   run:
-    - python >=3.5
+    - python >=3.8
 
 test:
   imports:
     - itemadapter
   requires:
     - pip
+    - attrs
+    - pydantic <2
+    - pytest >=5.4
+    - scrapy >=2.0
+  source_files:
+    - itemadapter
+    - tests
   commands:
     - pip check
+    # blocked by https://github.com/scrapy/itemadapter/issues/83
+    # - pytest tests
 
 about:
   home: https://github.com/scrapy/itemadapter
