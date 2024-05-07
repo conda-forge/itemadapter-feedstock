@@ -32,6 +32,7 @@ test:
     - scrapy >=2.0
   commands:
     - pip check
+    - pytest tests
 
 about:
   home: https://github.com/scrapy/itemadapter
