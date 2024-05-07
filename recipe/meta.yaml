@@ -30,6 +30,10 @@ test:
     - pydantic <2
     - pytest >=5.4
     - scrapy >=2.0
+  source_files:
+    - itemadapter
+    - pytest.ini
+    - tests
   commands:
     - pip check
     - pytest tests
