@@ -32,7 +32,6 @@ test:
     - scrapy >=2.0
   source_files:
     - itemadapter
-    - pytest.ini
     - tests
   commands:
     - pip check
