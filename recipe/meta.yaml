@@ -1,13 +1,13 @@
 {% set name = "itemadapter" %}
-{% set version = "0.13.1" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fa139c7be2aa80f8874b2f23d165d5d4aa47c4b85c54ab530b567fd5f684f1b4
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ba7c46f434cc127dfdc55b077e724bcf88721e0bbfd472fe6cf8dde8bcd2008b
 
 build:
   noarch: python
@@ -28,10 +28,10 @@ test:
   requires:
     - python {{ python_min }}
     - pip
-    - attrs
-    - pydantic <2
+    - attrs >=22.1.0
+    - pydantic >=2.7
     - pytest >=5.4
-    - scrapy >=2.0
+    - scrapy >=2.7
   source_files:
     - itemadapter
     - tests
@@ -53,6 +53,7 @@ about:
 extra:
   recipe-maintainers:
     - Gallaecio
+    - AdrianAtZyte
     - wRAR
     - dangra
     - rmax
