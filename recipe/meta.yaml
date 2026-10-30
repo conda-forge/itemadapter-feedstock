@@ -28,10 +28,10 @@ test:
   requires:
     - python {{ python_min }}
     - pip
-    - attrs
-    - pydantic <2
+    - attrs >=22.1.0
+    - pydantic >=2.7
     - pytest >=5.4
-    - scrapy >=2.0
+    - scrapy >=2.7
   source_files:
     - itemadapter
     - tests
